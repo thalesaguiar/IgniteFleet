@@ -1,11 +1,11 @@
-import {ImageBackground, Text} from 'react-native';
+import {ImageBackground, Text, TouchableOpacity} from 'react-native';
 import {styled} from 'styled-components';
 import theme from '../../theme';
 export const Container = styled(ImageBackground)`
   flex: 1;
   border-radius: 6px;
-  justify-content: center;
   padding: 52px;
+  justify-content: center;
 `;
 
 export const Title = styled(Text)`
@@ -21,4 +21,20 @@ export const Slogan = styled(Text)`
   color: ${theme.COLORS.GRAY_100};
   text-align: center;
   margin-bottom: 32px;
+`;
+
+export const Button = styled(TouchableOpacity)`
+  background-color: ${theme.COLORS.BRAND_MID};
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ButtonTitle = styled(Text)`
+  color: ${theme.COLORS.WHITE};
+  font-size: ${theme.FONT_SIZE.LG};
+  font-family: ${theme.FONT_FAMILY.BOLD};
 `;
